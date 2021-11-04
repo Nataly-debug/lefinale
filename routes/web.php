@@ -13,7 +13,7 @@ use App\Http\Controller\HospedeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
+Route::get('/retorno', function () {
     return view('retorno');
 });
 
