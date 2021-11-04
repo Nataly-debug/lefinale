@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\HospedeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,5 @@ Route::get('/apresentacao',function(){
     return view('apresentacao');
 
 })->name('apresentacao');
+
+Route::get('/', [HospedeController::class,'index'])->name('hospedes');
