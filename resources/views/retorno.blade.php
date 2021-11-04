@@ -10,17 +10,7 @@ initial-scale=1.0">
 </head>
 <body>
     <h1>Teste index Hospede</h1>
-    <h2>foreach</h2>
-    @foreach ($hospedes as $hospede)
-        {{$hospede->nome}} - {{$hospede->cpf}}<br>
+    
 
-    @endforeach
-    <h2>forelse</h2>
-    @forelse ($hospedes as $hospede)
-        {{$hospede->nome}} - {{$hospede->cpf}}<br>
-    @empty
-        <p>não existem hospedes</p>
-        @endforelse
-        
 </body>
 </html>
