@@ -14,7 +14,7 @@ class CreateAvaliacaosTable extends Migration
     public function up()
     {
         Schema::create('avaliacaos', function (Blueprint $table) {
-            $table->id('avaliacao_id');
+            $table->id();
             $table->string('valor_avaliacao');
             $table->timestamps();
         });

@@ -14,7 +14,7 @@ class CreateRecuperarSenhasTable extends Migration
     public function up()
     {
         Schema::create('recuperar_senhas', function (Blueprint $table) {
-            $table->id('recuperar_senha_id');
+            $table->id();
             $table->string('resposta_pergunta');
             $table->timestamps();
         });

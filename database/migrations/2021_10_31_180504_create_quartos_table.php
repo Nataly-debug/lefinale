@@ -14,7 +14,7 @@ class CreateQuartosTable extends Migration
     public function up()
     {
         Schema::create('quartos', function (Blueprint $table) {
-            $table->id('quarto_id');
+            $table->id();
             $table->integer('num_quarto');
             $table->timestamps();
         });
