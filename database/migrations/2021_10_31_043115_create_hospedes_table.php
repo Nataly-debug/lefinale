@@ -13,7 +13,7 @@ class CreateHospedesTable extends Migration
      */
     public function up()
     {
-        Schema::create('"hospedes"', function (Blueprint $table) {
+        Schema::create('hospedes', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->string('cpf');
