@@ -46,4 +46,4 @@ Route::get('/apresentacao',function(){
 
 })->name('apresentacao');
 
-Route::get('/', [HospedeController::class,'index'])->name('hospedes');
+Route::get('/retorno', [HospedeController::class,'index'])->name('hospedes');

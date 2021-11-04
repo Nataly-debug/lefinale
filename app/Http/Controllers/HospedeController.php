@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 
 class HospedeController extends Controller
@@ -13,7 +14,7 @@ class HospedeController extends Controller
      */
     public function index()
     {
-        $hospedes=Hospede::all();
+        $hospedes = Hospede::all();    
         return view('retorno',['hospedes'=>$hospedes]);
     }
 
