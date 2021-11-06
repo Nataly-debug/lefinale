@@ -15,7 +15,7 @@ class HospedeController extends Controller
     public function index()
     {
         $hospedes = Hospede::all();    
-        return view('retorno',['hospedes'=>$hospedes]);
+        return view('teste',['hospedes'=>$hospedes]);
     }
 
     /**
