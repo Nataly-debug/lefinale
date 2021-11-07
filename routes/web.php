@@ -8,6 +8,8 @@ use App\Http\Controllers\HospedeController;
 
 Route::get('/', [HospedeController::class,'index'])->name('hospedes');
 
+Route::get('/hospede/{id}', [HospedeController::class,'show'])->name('hospedes_show');
+
 Route::get('/cadastro',function(){
     return view('cadastro');
 });
@@ -33,3 +35,10 @@ Route::get('/apresentacao',function(){
 
 })->name('apresentacao');
 
+Route::get('/hospede',function(){
+    return view('hospede');
+});
+
+Route::get('/hospede_show',function(){
+    return view('hospede_show');
+});

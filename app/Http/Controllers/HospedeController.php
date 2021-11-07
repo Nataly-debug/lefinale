@@ -11,8 +11,7 @@ class HospedeController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
-    public function index()
+     */public function index()
     {
         $hospedes = Hospede::all();    
         return view('teste',['hospedes'=>$hospedes]);
@@ -47,7 +46,8 @@ class HospedeController extends Controller
      */
     public function show($id)
     {
-        //
+        $hospede = Hospede::findOrFail($id);
+        return view('hospede_show',['hospede'=>$hospede]);
     }
 
     /**
