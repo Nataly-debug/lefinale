@@ -10,6 +10,8 @@ Route::get('/', [HospedeController::class,'index'])->name('hospedes');
 
 Route::get('/hospede/{id}', [HospedeController::class,'show'])->name('hospedes_show');
 
+//Route::get('/hospede/{id}',[HospedeController::class, 'destroy'])->name('hospede_delete');
+
 Route::get('/cadastro',function(){
     return view('cadastro');
 });

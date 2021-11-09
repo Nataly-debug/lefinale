@@ -13,6 +13,8 @@
     <h1>{{$hospede->nome}}</h1>
     <hr>
     <p>cpf: {{$hospede->cpf}}</p>
+    <hr>
+    <p>Numero de telefone: {{$hospede->num_telefone}}</p>
     
 </body>
 

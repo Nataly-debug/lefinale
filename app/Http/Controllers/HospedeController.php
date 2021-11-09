@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use App\Model\Hospede;
 
 class HospedeController extends Controller
 {
@@ -14,7 +15,7 @@ class HospedeController extends Controller
      */public function index()
     {
         $hospedes = Hospede::all();    
-        return view('teste',['hospedes'=>$hospedes]);
+        return view('hospede',['hospedes'=>$hospedes]);
     }
 
     /**
@@ -81,6 +82,6 @@ class HospedeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //Hospede::destroy(2);
     }
 }
